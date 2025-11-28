@@ -1,0 +1,530 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url(OpenSans-VariableFont_wdth,wght.ttf);
+}
+
+:root {
+    --vari-tausta-musta-ylapalkki: #000000;
+    --vari-tausta-vaalea-keski: #DADBF1;
+    --vari-valkoinen: #FFFFFF;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Open Sans';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.projekti-banneri {
+    display: flex;
+    flex-direction: row;
+}
+
+.sivun-yläpalkki {
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    padding: 0 70px;
+    background-color: var(--vari-tausta-musta-ylapalkki);
+    color: var(--vari-valkoinen);
+}
+
+.sivun-yläpalkki__rivi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.sivun-yläpalkki__rivi__logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.sivun-yläpalkki__rivi__logo__kuva {
+    display: flex;
+    height: 30px;
+    width: 30px;
+}
+
+.sivun-yläpalkki__rivi__logo__teksti {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5px;
+    font-size: x-large;
+    gap: 10px;
+}
+
+.sivun-yläpalkki__rivi__logo__teksti__abstract {
+    display: flex;
+    flex-direction: row;
+}
+
+.sivun-yläpalkki__rivi__logo__teksti__linkki {
+    display: flex;
+    color: var(--vari-valkoinen);
+    text-decoration: none;
+}
+
+.sivun-yläpalkki__rivi__apu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.sivun-yläpalkki__rivi__apu__request {
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    background-color: var(--vari-tausta-musta-ylapalkki);
+    border: 1px solid var(--vari-valkoinen);
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: var(--vari-valkoinen);
+    text-decoration: none;
+}
+
+.sivun-yläpalkki__rivi__apu__sign-in {
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    background-color: #4C5FD5;
+    color: var(--vari-valkoinen);
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+}
+
+.sivun-keskipalkki {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    background-color: var(--vari-tausta-vaalea-keski);
+}
+
+.sivun-keskipalkki__hakukone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.sivun-keskipalkki__hakukone__teksti {
+    display: flex;
+    flex-direction: row;
+    position: left;
+}
+
+.sivun-keskipalkki__hakukone__haku {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    padding-left: 40px;
+    height: 60px;
+}
+
+.sivun-alapalkki {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sivun-alapalkki__valkoinen-alue {
+    display: flex;
+    flex-direction: row;
+    min-height: 600px;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut {
+    display: flex;
+    flex-direction: row;
+    padding: 200px;
+    justify-content: space-evenly;
+    gap: 100px;
+    font-size: larger;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__ensimmäinen-rivi {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 350px;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__ensimmäinen-rivi__Using {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__ensimmäinen-rivi__Using__kuva {
+    display: flex;
+    flex-direction: row;
+    width: 80px;
+    height: 80px;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__ensimmäinen-rivi__Using__sarake {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__ensimmäinen-rivi__Using__teksti {
+    display: flex;
+    flex-direction: column;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__ensimmäinen-rivi__Manage {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__ensimmäinen-rivi__Using__linkki {
+    display: flex;
+    flex-direction: row;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__ensimmäinen-rivi__Using__linkki__linkki {
+    display: flex;
+    text-decoration: none;
+}
+
+
+.sivun-alapalkki__valkoinen-alue__apusivut__ensimmäinen-rivi__Manage__kuva {
+    display: flex;
+    flex-direction: row;
+    width: 80px;
+    height: 80px;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__ensimmäinen-rivi__Manage__sarake {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__ensimmäinen-rivi__Manage__teksti {
+    display: flex;
+    flex-direction: column;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__ensimmäinen-rivi__Manage__linkki {
+    display: flex;
+    flex-direction: row;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__ensimmäinen-rivi__Manage__linkki__linkki {
+    display: flex;
+    text-decoration: none;
+}
+
+
+.sivun-alapalkki__valkoinen-alue__apusivut__ensimmäinen-rivi__Authenticate {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__ensimmäinen-rivi__Authenticate__kuva {
+    display: flex;
+    flex-direction: row;
+    width: 80px;
+    height: 80px;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__ensimmäinen-rivi__Authenticate__sarake {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.sivun-alapalkki__valkoinen-alue__apusivut__ensimmäinen-rivi__Authenticate__teksti {
+    display: flex;
+    flex-direction: column;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__ensimmäinen-rivi__Authenticate__linkki {
+    display: flex;
+    flex-direction: row;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__ensimmäinen-rivi__Authenticate__linkki__linkki {
+    display: flex;
+    text-decoration: none;
+}
+
+
+.sivun-alapalkki__valkoinen-alue__apusivut__toinen-rivi {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 350px;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__toinen-rivi__Manage-Account {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__toinen-rivi__Manage-Account__kuva {
+    display: flex;
+    flex-direction: row;
+    width: 80px;
+    height: 80px;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__toinen-rivi__Manage-Account__sarake {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__toinen-rivi__Manage-Account__teksti {
+    display: flex;
+    flex-direction: row;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__ensimmäinen-rivi__Manage-Account__linkki {
+    display: flex;
+    flex-direction: row;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__ensimmäinen-rivi__Manage-Account__linkki__linkki {
+    display: flex;
+    text-decoration: none;
+}
+
+
+.sivun-alapalkki__valkoinen-alue__apusivut__toinen-rivi__Manage-Bill {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__toinen-rivi__Manage-Bill__kuva {
+    display: flex;
+    flex-direction: row;
+    width: 80px;
+    height: 80px;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__toinen-rivi__Manage-Bill__sarake {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__toinen-rivi__Manage-Bill__teksti {
+    display: flex;
+    flex-direction: column;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__ensimmäinen-rivi__Manage-Bill__linkki {
+    display: flex;
+    flex-direction: row;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__ensimmäinen-rivi__Manage-Bill__linkki__linkki {
+    display: flex;
+    text-decoration: none;
+}
+
+
+.sivun-alapalkki__valkoinen-alue__apusivut__toinen-rivi__Abstract-Support {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__toinen-rivi__Abstract-Support__kuva {
+    display: flex;
+    flex-direction: row;
+    width: 80px;
+    height: 80px;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__toinen-rivi__Abstract-Support__sarake {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__toinen-rivi__Abstract-Support__teksti {
+    display: flex;
+    flex-direction: column;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__ensimmäinen-rivi__Abstract-Support__linkki {
+    display: flex;
+    flex-direction: row;
+}
+
+.sivun-alapalkki__valkoinen-alue__apusivut__ensimmäinen-rivi__Abstract-Support__linkki__linkki {
+    display: flex;
+    text-decoration: none;
+}
+
+
+.sivun-alapalkki__musta-alue {
+    display: flex;
+    flex-direction: row;
+    background-color: #1A1D20;
+    color: var(--vari-valkoinen);
+    height: 250px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 40px;
+}
+
+.sivun-alapalkki__musta-alue__extra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sivun-alapalkki__musta-alue__extra__apulinkit {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.sivun-alapalkki__musta-alue__extra__apulinkit__abstract {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sivun-alapalkki__musta-alue__extra__apulinkit__abstract__titteli {
+    display: flex;
+    flex-direction: column;
+}
+
+.sivun-alapalkki__musta-alue__extra__apulinkit__abstract__teksti {
+    display: flex;
+    flex-direction: column;
+    color: var(--vari-valkoinen);
+    text-decoration: none;
+}
+
+.sivun-alapalkki__musta-alue__extra__apulinkit__resurssit {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sivun-alapalkki__musta-alue__extra__apulinkit__resurssit__titteli {
+    display: flex;
+    flex-direction: column;
+}
+
+.sivun-alapalkki__musta-alue__extra__apulinkit__resurssit__teksti {
+    display: flex;
+    flex-direction: column;
+    color: var(--vari-valkoinen);
+    text-decoration: none;
+}
+
+
+.sivun-alapalkki__musta-alue__extra__apulinkit__yhteisö {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sivun-alapalkki__musta-alue__extra__apulinkit__yhteisö__titteli {
+    display: flex;
+    flex-direction: column;
+}
+
+.sivun-alapalkki__musta-alue__extra__apulinkit__yhteisö__teksti {
+    display: flex;
+    flex-direction: column;
+    color: var(--vari-valkoinen);
+    text-decoration: none;
+}
+
+.sivun-alapalkki__musta-alue__extra__apulinkit__sarake {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sivun-alapalkki__musta-alue__extra__apulinkit__yritys {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sivun-alapalkki__musta-alue__extra__apulinkit__yritys__titteli {
+    display: flex;
+    flex-direction: column;
+}
+
+.sivun-alapalkki__musta-alue__extra__apulinkit__yritys__teksti {
+    display: flex;
+    flex-direction: column;
+    color: var(--vari-valkoinen);
+    text-decoration: none;
+}
+
+.sivun-alapalkki__musta-alue__extra__apulinkit__yhteys {
+    display: flex;
+    flex-direction: column;
+}
+
+.sivun-alapalkki__musta-alue__extra__apulinkit__yhteys__contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.sivun-alapalkki__musta-alue__extra__apulinkit__yhteys__mail {
+    display: flex;
+    flex-direction: column;
+    color: var(--vari-valkoinen);
+    text-decoration: none;
+}
+
+.sivun-alapalkki__musta-alue__extra__apulinkit__sarake__copyright {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 150px;
+    gap: 100;
+}
+
+.sivun-alapalkki__musta-alue__extra__apulinkit__copyright {
+    display: flex;
+    flex-direction: column;
+}
+
+.sivun-alapalkki__musta-alue__extra__apulinkit__copyright__kuva {
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    width: 40px;
+}
+
+.sivun-alapalkki__musta-alue__extra__apulinkit__copyright__teksti {
+    display: flex;
+    flex-direction: column;
+}
